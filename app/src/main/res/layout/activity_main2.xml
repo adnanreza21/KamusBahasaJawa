@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/is"
+    tools:context=".Main2Activity">
+    <TextView
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/text0"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:textSize="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Kata dalam Bahasa Indonesia "/>
+    <EditText
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@color/grey"
+        android:padding="@dimen/_7sdp"
+        android:textSize="@dimen/_16sdp"
+        android:hint="Masukkan Kata"
+        android:layout_below="@id/text0"
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:shadowColor="@color/brown"
+        android:onClick="getTranslate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:id="@+id/button"
+        android:background="@drawable/custom_button"
+        android:layout_below="@id/edit1"
+        android:text="TERJEMAHKAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"/>
+    <LinearLayout
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_below="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Ngoko"/>
+
+            <EditText
+                android:id="@+id/edit2"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/grey"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_below="@id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Krama Madya"/>
+
+            <EditText
+                android:id="@+id/edit3"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/grey"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_below="@id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Krama Inggil"/>
+
+            <EditText
+                android:id="@+id/edit4"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/grey"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_below="@id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
